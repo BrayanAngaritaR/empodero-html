@@ -3,12 +3,17 @@
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+
 .bg-dark-theme{
 	background-color: #051926;
 }
 
 .btn-rounded{
 	border-radius: 3em;
+}
+
+.banner-home{
+	margin-top: -12%;
 }
 
 .search{
