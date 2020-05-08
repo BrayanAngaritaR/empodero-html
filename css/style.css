@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700;800&display=swap');
+* { 
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.bg-dark-theme{
+	background-color: #051926;
+}
+
+.btn-rounded{
+	border-radius: 3em;
+}
+
+.search{
+	background-color: #ffffff;
+	width: 360px;
+	border-radius: 25px;
+	font-family: 'Nunito';
+	font-size: 14px;
+	height: 48px;
+	padding-left: 30px;
+	border: 2px solid #485afe;
+}
+
+.bg-dark-blue{
+	background-color: #1B2672;
+}
+
+.input-mc{
+	background: transparent;
+	color: #fff;
+	border: 0;
+    border-bottom: 1px solid white;
+}
+
+.input-mc:focus {
+    color: #fff;
+    background: transparent;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-menu{
+	background-color: #3c59ff;
+	color: #ffffff;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 13px 30px;
+    line-height: normal;
+    margin: 0;
+    -webkit-border-radius: 50px;
+	font-weight: 700;
+}
+
+.megamenu-li {
+	position: static;
+}
+
+.megamenu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+
+.wave-container {
+  background-position: center;
+    background-size: cover;
+  background-image: url('../img/6.jpg');
+  overflow: hidden;
+}
+
+.card{
+	border: none;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/6.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
