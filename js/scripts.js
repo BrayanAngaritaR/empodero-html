@@ -20,17 +20,22 @@ $(document).scroll(function(e){
     if(scrollTop > 70){
         $('.navbar').removeClass('static-top').addClass('fixed-top');
         $('.navbar').addClass('bg-dark-theme');
-        $('.navbar').addClass('pt-4');
-
-
+        $('.navbar').addClass('pt-3');
+        $('.menu-mobile').addClass('bg-dark-theme');
+        $('.menu-mobile-links').addClass('text-white');
+        $('.navbar-light .navbar-nav .nav-link').addClass('text-white');        
         $('.navbar-brand img').attr('src', 'http://167.172.224.226/images/logo-white.png');
-
 
     } else {
         $('.navbar').removeClass('fixed-top').addClass('static-top');
         $('.navbar').removeClass('bg-dark-theme');
-        $('.navbar').removeClass('pt-4');
+        $('.navbar').removeClass('pt-3');
+        $('.menu-mobile').removeClass('bg-dark-theme');
+        $('.menu-mobile-links').removeClass('text-white');
         $('.navbar-brand img').attr('src', 'http://167.172.224.226/images/logo.png');
+        $('.navbar-light .navbar-nav .nav-link').removeClass('text-white'); 
+
+
     }
 });
 
