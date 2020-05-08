@@ -54,6 +54,17 @@
 	font-weight: 700;
 }
 
+.btn-outline-theme{
+	color: #1b2771;
+    border-color: #1b2771;
+}
+
+.btn-outline-theme:hover{
+	background: #1b2771;
+	color: #fff;
+    border-color: #1b2771;
+}
+
 .megamenu-li {
 	position: static;
 }
@@ -81,10 +92,10 @@
 
 .parallax {
   /* The image used */
-  background-image: url("../img/6.jpg");
+  background-image: url("../img/home/2.png");
 
   /* Set a specific height */
-  height: 500px;
+  min-height: 600px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
