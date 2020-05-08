@@ -121,6 +121,9 @@
 	color: #1b2771;
 }
 
+.navbar{
+	box-shadow:  1px 12px 13px 2px rgba(5, 25, 37, 0.2);
+}
 
 
 .parallax {
@@ -137,3 +140,19 @@
   background-size: cover;
 }
 
+.container-fluid{
+	max-width: 1368px;
+}
+
+.social-links a {
+	color: #626b74;
+}
+
+.social-links a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-links{
+	list-style: none;
+}

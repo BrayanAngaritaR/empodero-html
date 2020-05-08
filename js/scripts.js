@@ -20,6 +20,7 @@ $(document).scroll(function(e){
     if(scrollTop > 70){
         $('.navbar').removeClass('static-top').addClass('fixed-top');
         $('.navbar').addClass('bg-dark-theme');
+        $('.navbar').addClass('pt-4');
 
 
         $('.navbar-brand img').attr('src', 'http://167.172.224.226/images/logo-white.png');
@@ -28,6 +29,7 @@ $(document).scroll(function(e){
     } else {
         $('.navbar').removeClass('fixed-top').addClass('static-top');
         $('.navbar').removeClass('bg-dark-theme');
+        $('.navbar').removeClass('pt-4');
         $('.navbar-brand img').attr('src', 'http://167.172.224.226/images/logo.png');
     }
 });
