@@ -102,14 +102,111 @@
 	background: red;
 }*/
 
-.btn-outline-theme{
-	    border: 2px solid #3F51B5;
-    border-radius: 27px;
+.sign_up_tab li.nav-item {
+    text-align: center;
+    width: 50%;
+}
+
+.sign_up_tab li.nav-item .nav-link.active {
+    background-color: #ffffff;
+    border: none;
+}
+
+.sign_up_tab li.nav-item .nav-link {
+    border: none;
+    color: #0a0a0a;
     font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sign_up_tab li.nav-item .nav-link {
+    background-color: #f9fafc;
+    height: 70px;
+    line-height: 65px;
+    margin: 0;
+    padding: 0;
+}
+
+.login_form {
+    padding: 40px 40px 0;
+}
+
+.sign_up_form {
+    padding: 40px 40px 0;
+}
+
+.sign_up_form .form-control {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #7f7f7f;
+    height: 50px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}
+
+.login_form .form-control {
+    border: 1px solid #dddddd;
+    color: #6f7074;
+    border-radius: 5px;
+    color: #6f7074;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.btn-thm2 {
+    background-color: #192675;
+    border-color: #192675;
+    color: #ffffff;
+    border-radius: 0px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login_form .btn-log, .sign_up_form .btn-log{
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    height: 55px;
+}
+
+.sign_up_form .heading {
+    margin-bottom: 40px;
+}
+
+.btn-outline-theme{
+	border: 2px solid #3F51B5;
+    border-radius: 27px;
     color: #3F51B5;
     font-size: 18px;
     font-weight: 700;
 }
+
+.heading h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.modal-content{
+	border-radius: 0px;
+	border: 0;
+}
+
+.sign_up_modal .modal-header {
+    background-color: #3452ff;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    text-align: center;
+    top: -20px;
+    width: 50px;
+}
+
 
 .btn-outline-theme:hover{
 	background: #1b2771;

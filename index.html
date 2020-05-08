@@ -19,7 +19,7 @@
 	<header class="bg-dark-theme pt-2">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-sm-12 col-md-4 my-auto">
+				<div class="d-none d-md-block col-md-4 my-auto align-self-center">
 					<span>
 						<a 
 						class="text-white" 
@@ -29,19 +29,186 @@
 					</span>
 				</div>
 
-				<div class="col-sm-12 col-md-4 text-right my-auto">
-					<span class="text-white">
-						<i class="lni lni-user"></i>
-						<a 
-						class="text-white" 
-						href="">
-						Ingresar/Registrarse
-						</a>
-					</span>
+				<div class="col-sm-12 col-md-4 text-right my-auto align-self-center">
+					<button class="btn btn-link btn-rounded pl-4 pr-4" data-toggle="modal" data-target="#authModal">
+						<span class="text-white">
+							<i class="lni lni-user"></i>
+							Ingresar/Registrarse
+						</span>
+					</button>
 					<span class="text-white ml-3">
 						<i class="lni lni-cart"></i>
 					</span>
 				</div>
+
+				<!-- Auth Modal -->
+				<div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+
+						<div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <ul class="sign_up_tab nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Registrarse</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+    <div class="login_form">
+        <form method="POST" action="http://empodero.com/login">
+        	<input type="hidden" name="_token" value="LA4x5Fv3bsTIG3VPqgWuOLI6zVjzNDX50hJwOppH">
+            <div class="heading">
+                <h3 class="text-center">Ingresar a tu cuenta</h3>
+                
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <input id="email" type="email" class="form-control " name="email" value="" required="" autocomplete="email" autofocus="" placeholder="E-Mail Address">
+
+                            </div>
+            <!-- /Email -->
+
+            <!-- Password -->
+            <div class="form-group">
+            	<input id="password" type="password" class="form-control " name="password" required="" autocomplete="current-password" placeholder="Password">
+
+                            </div>
+            <!-- /Password -->
+
+            <!-- Remember me -->
+            <div class="form-group custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="remember" name="remember">
+				<label class="custom-control-label" for="remember">Remember Me</label>
+
+								<a class="tdu btn-fpswd float-right" href="http://empodero.com/password/reset">¿Olvidaste la contraseña?</a>
+							</div>
+			<!-- /Remember me -->
+
+			<!-- Login Button -->
+            <button type="submit" class="btn btn-log btn-block btn-thm2">Login</button>
+            <hr>
+            <!-- /Login Button -->
+
+            <!-- Login with Facebook and Google -->
+            
+            <!-- /Login with Facebook and Google -->
+        </form>
+    </div>
+</div>                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+    <div class="sign_up_form">
+        <div class="heading">
+            <h3 class="text-center">Crear nueva cuenta</h3>
+           
+        </div>
+        <form method="POST" action="http://empodero.com/register">
+        	<input type="hidden" name="_token" value="LA4x5Fv3bsTIG3VPqgWuOLI6zVjzNDX50hJwOppH">
+        	<!-- Username -->
+            <div class="form-group">
+            	<input id="username" type="text" class="form-control " name="username" value="" placeholder="Username" required="" autocomplete="username" autofocus="">
+
+            	            </div>
+            <!-- /Username -->
+
+            <!-- Name -->
+            <div class="form-group">
+            	<input id="name" type="text" class="form-control " name="name" value="" placeholder="Name" required="" autocomplete="name" autofocus="">
+
+            	            </div>
+            <!-- /Name -->
+
+            <!-- Name -->
+            <div class="form-group">
+                <input id="last_name" type="text" class="form-control " name="last_name" value="" placeholder="Last name" required="" autocomplete="last_name" autofocus="">
+
+                            </div>
+            <!-- /Name -->
+
+            <!-- Email -->
+            <div class="form-group">
+            	<input id="email" type="email" class="form-control " name="email" value="" placeholder="E-Mail Address" required="" autocomplete="email">
+
+            	            </div>
+            <!-- /Email -->
+
+            <!-- Password -->
+            <div class="form-group">
+            	<input id="password" type="password" class="form-control " name="password" placeholder="Password" required="" autocomplete="new-password">
+
+            	            </div>
+            <!-- /Password -->
+
+            <!-- Confirm Password -->
+            <div class="form-group">
+            	<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required="" autocomplete="new-password" placeholder="Confirm Password">
+            </div>
+            <!-- /Confirm Password -->
+
+            
+            <button type="submit" class="btn btn-log btn-block btn-thm2">Registrarse</button>
+
+            <hr>
+            <!-- Login with Facebook and Google -->
+            
+        </form>
+    </div>
+</div>                </div>
+            </div>
+
+            
+						<!-- <div class="modal-content  p-5">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+
+
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Ingresar</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Registrarse</a>
+								</li>
+							</ul>
+
+							
+
+							<div class="modal-body mb-3 mt-3">
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
+										Ingresar
+									</div>
+
+									<div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+										Registrarse
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="modal-footer mt-3">
+								<button class="btn btn-outline-theme pl-4 pr-4" data-dismiss="modal">Cancelar
+								</button>
+
+								<button type="submit" class="btn btn-theme pl-4 pr-4">
+									Confirmar
+								</button>
+								
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<!-- Event Modal -->
 			</div>
 		</div>
 	</header>
